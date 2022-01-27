@@ -112,7 +112,7 @@ neumorphic ?
 (x4 squares)
 
 - My projects: Name, Liked, Viewed, short info
-
+- This website
 
 (color field)
 - stay in touch with me
