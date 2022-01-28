@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: greenyellow;
+}
+
 ul, ol {
   list-style-type: none;
   margin: 0;
@@ -33,6 +37,10 @@ img {
 
 .about-style {
   display: none;
+}
+
+.policy, .term {
+  padding: 2em 2em;
 }
 
 header {
@@ -63,6 +71,10 @@ header ul a {
   display: block;
   padding: 0 0 0 1em;
   font-size: 15px;
+}
+
+section {
+  min-height: 100%;
 }
 
 section > div {
@@ -144,8 +156,8 @@ section > div h1 {
 .who .who-tech div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  /* -ms-grid-columns: (1fr)[4]; */
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
 }
 
@@ -343,6 +355,7 @@ section > div h1 {
 }
 
 footer {
+  position: relative;
   background-color: black;
   text-align: center;
   height: 70px;
@@ -383,6 +396,9 @@ footer .footer-icon {
   }
   section > div h1 {
     font-size: 36px;
+  }
+  .policy, .term {
+    padding: 2em 4em;
   }
   .about {
     padding: 5em;
@@ -456,6 +472,9 @@ footer .footer-icon {
   header ul a {
     padding: 0 0 0 3em;
     font-size: 24px;
+  }
+  .policy, .term {
+    padding: 2em 7em;
   }
   section > div {
     padding: 2em 5em;
@@ -564,7 +583,7 @@ footer .footer-icon {
   .feature .feature-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
+    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
     justify-items: center;
@@ -607,7 +626,7 @@ footer .footer-icon {
     height: 60px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    /* -ms-grid-columns: (1fr)[3]; */
         grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -651,6 +670,9 @@ footer .footer-icon {
   header ul a {
     padding: 0 0 0 4em;
     font-size: 26px;
+  }
+  .policy, .term {
+    padding: 4em 10em;
   }
   section > div {
     padding: 4em 7em;
@@ -760,7 +782,7 @@ footer .footer-icon {
   }
   .offer .offer-container ul {
     grid-gap: 60px;
-    -ms-grid-columns: (1fr)[4];
+    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
   }
   .offer .offer-container ul li {
