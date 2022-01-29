@@ -156,8 +156,8 @@ section > div h1 {
 .who .who-tech div {
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (1fr)[4]; */
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
 }
 
@@ -325,6 +325,18 @@ section > div h1 {
   margin: 10px 0 12px 0;
 }
 
+.feature .feature-container ul li .feature-outer .feature-inner .feature-desc {
+  display: none;
+}
+
+.feature .feature-container ul li a:hover {
+  color: white;
+}
+
+.feature .feature-container ul li .feature-outer:hover .feature-desc {
+  display: unset;
+}
+
 .feature .speedtyper {
   background-image: url("../images/speedtyper.png");
 }
@@ -352,6 +364,16 @@ section > div h1 {
 .contact-media .contact-media-each svg {
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.contact-media .contact-media-each a:hover {
+  color: black;
+  font-weight: 700;
+}
+
+.contact-media .contact-media-each a:hover svg {
+  -webkit-filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(261deg) brightness(106%) contrast(102%);
+          filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(261deg) brightness(106%) contrast(102%);
 }
 
 footer {
@@ -583,7 +605,7 @@ footer .footer-icon {
   .feature .feature-container ul {
     display: -ms-grid;
     display: grid;
-    /* -ms-grid-columns: (1fr)[4]; */
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
     justify-items: center;
@@ -626,7 +648,7 @@ footer .footer-icon {
     height: 60px;
     display: -ms-grid;
     display: grid;
-    /* -ms-grid-columns: (1fr)[3]; */
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -657,6 +679,10 @@ footer .footer-icon {
     width: 40px;
     -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  }
+  footer .footer-icon a:hover svg {
+    -webkit-filter: invert(72%) sepia(100%) saturate(333%) hue-rotate(32deg) brightness(102%) contrast(111%);
+            filter: invert(72%) sepia(100%) saturate(333%) hue-rotate(32deg) brightness(102%) contrast(111%);
   }
 }
 
@@ -782,7 +808,7 @@ footer .footer-icon {
   }
   .offer .offer-container ul {
     grid-gap: 60px;
-    /* -ms-grid-columns: (1fr)[4]; */
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
   .offer .offer-container ul li {

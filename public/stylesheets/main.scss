@@ -237,6 +237,17 @@ section > div {
                         font-size: 24px;
                         margin: 10px 0 12px 0;
                     }
+                    .feature-desc {
+                        display: none;
+                    }
+                }
+            }
+            a:hover {
+                color: white;
+            }
+            .feature-outer:hover {
+                .feature-desc {
+                    display: unset;
                 }
             }
         }
@@ -259,6 +270,13 @@ section > div {
         }
         svg {
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        }
+        a:hover {
+            color: black;
+            font-weight: 700;
+            svg {
+                filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(261deg) brightness(106%) contrast(102%);
+            }
         }
     }
 }
@@ -556,6 +574,11 @@ footer {
             svg {
                 width: 40px;
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+            }
+            a:hover {
+                svg {
+                    filter: invert(72%) sepia(100%) saturate(333%) hue-rotate(32deg) brightness(102%) contrast(111%);
+                }
             }
         }
     }
