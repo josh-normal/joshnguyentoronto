@@ -302,6 +302,41 @@ footer {
         display: none;
     }
 }
+.detail {
+    display: flex;
+    flex-direction: column;
+    .detail-heading {
+        h1 {
+            font-size: 46px;
+        }
+        a {
+            font-size: 30px;
+        }
+        span {
+            font-size: 36px;
+            width: 10px;
+        }
+        margin-bottom: 2em;
+    }
+    .detail-body {
+        display: grid;
+        grid-template-columns: 1fr 5px 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "image separate info";
+        .detail-image {
+            grid-area: image;
+            margin-right: 2em;
+        }
+        .detail-separate {
+            grid-area: separate;
+            background-color: black;
+        }
+        .detail-info {
+            grid-area: info;
+            margin-left: 2em;
+        }
+    }
+}
 
 
 

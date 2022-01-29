@@ -162,7 +162,20 @@ neumorphic ?
 
 ---
 
-# My projects:
+# Projects:
+- Feature Projects
+- All Projects
+
+---
+
+# Each Project Display:
+(Two columns layout)
+  Discription (discription, about the game, Instruction)
+  Images Reviews
+  Techonologies used
+  Challenges
+  Ice box
+  ERD
 
 
 ---

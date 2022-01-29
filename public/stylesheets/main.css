@@ -401,6 +401,64 @@ footer .footer-icon {
   display: none;
 }
 
+.detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detail .detail-heading {
+  margin-bottom: 2em;
+}
+
+.detail .detail-heading h1 {
+  font-size: 46px;
+}
+
+.detail .detail-heading a {
+  font-size: 30px;
+}
+
+.detail .detail-heading span {
+  font-size: 36px;
+  width: 10px;
+}
+
+.detail .detail-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr;
+      grid-template-columns: 1fr 5px 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "image separate info";
+}
+
+.detail .detail-body .detail-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  margin-right: 2em;
+}
+
+.detail .detail-body .detail-separate {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: separate;
+  background-color: black;
+}
+
+.detail .detail-body .detail-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: info;
+  margin-left: 2em;
+}
+
 @media only screen and (min-width: 750px) {
   header {
     padding: 2em;
