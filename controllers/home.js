@@ -6,6 +6,7 @@ module.exports = {
     project,
     checker,
     speedtyper,
+    portfolio,
 }
 
 
@@ -38,3 +39,6 @@ function speedtyper(req, res) {
     res.render('projects/speedtyper')
 }
 
+function portfolio(req, res) {
+    res.render('projects/portfolio')
+}

@@ -13,6 +13,7 @@ router.get('/project', homeCtrl.project);
 
 router.get('/project/checker', homeCtrl.checker);
 router.get('/project/speedtyper', homeCtrl.speedtyper);
+router.get('/project/portfolio', homeCtrl.portfolio);
 
 
 
