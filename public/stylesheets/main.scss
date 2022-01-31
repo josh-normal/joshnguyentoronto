@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: greenyellow;
+    color: #0080FF;
 }
 ul {
     list-style-type: none;
@@ -112,11 +112,14 @@ section > div {
     .who-tech {
         div {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: 1em;
-            img {
-                width: 40px;
-                justify-self: center;
+            p {
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    justify-self: left;
+                }
             }
         }
     }
@@ -124,9 +127,10 @@ section > div {
 .offer-container ul li {
     padding: 1em 2em;
     .icon-container {
-        height: 50px;
+        height: 70px;
         display: grid;
         place-content: center;
+        margin-bottom: 1em;
     }
     .offer-title {
         font-weight: bold;
@@ -142,6 +146,7 @@ section > div {
             height: 50px;
             display: grid;
             place-content: center;
+            margin-bottom: 1em;
         }
         .process-title {
             font-weight: bold;
@@ -255,8 +260,18 @@ section > div {
     .speedtyper {
         background-image: url('../images/speedtyper.png');
     }
+    .portfolio {
+        background-image: url('../images/portfolio.png');
+    }
     .checker {
         background-image: url('../images/checker.png');
+    }
+}
+.contact-text {
+    a:hover {
+        svg {
+            filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+        }
     }
 }
 .contact-media {
@@ -272,10 +287,10 @@ section > div {
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
         }
         a:hover {
-            color: black;
+            color: #0080FF;
             font-weight: 700;
             svg {
-                filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(261deg) brightness(106%) contrast(102%);
+                filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
             }
         }
     }
@@ -352,6 +367,9 @@ footer {
         }
         .showcase-speedtyper {
             background-image: url('../images/speedtyper.png');
+        }
+        .showcase-portfolio {
+            background-image: url('../images/portfolio.png');
         }
         .showcase-checker {
             background-image: url('../images/checker.png');
@@ -448,6 +466,14 @@ footer {
         }
         .about-inspired {
             font-size: 24px;
+        }
+    }
+    .who {
+        .who-tech {
+            div {
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1em;
+            }
         }
     }
     .offer-container ul {
@@ -592,6 +618,10 @@ footer {
             width: 50%;
             margin: 0;
             padding: 0 0 0 1em;
+            div {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1em;
+            }
         }
     }
     .offer {
@@ -674,10 +704,13 @@ footer {
                 }
             }
             .speedtyper {
-                background-image: url(../images/speedtyper_small.png);
+                background-image: url('../images/speedtyper_small.png');
+            }
+            .portfolio {
+                background-image: url('../images/portfolio_small.png');
             }
             .checker {
-                background-image: url(../images/checker_small.png);
+                background-image: url('../images/checker_small.png');
             }
         }
     }
@@ -704,10 +737,13 @@ footer {
                 }
             }
             .showcase-speedtyper {
-                background-image: url(../images/speedtyper_small.png);
+                background-image: url('../images/speedtyper_small.png');
+            }
+            .showcase-portfolio {
+                background-image: url('../images/portfolio_small.png');
             }
             .showcase-checker {
-                background-image: url(../images/checker_small.png);
+                background-image: url('../images/checker_small.png');
             }
         }
     }
@@ -748,7 +784,7 @@ footer {
             }
             a:hover {
                 svg {
-                    filter: invert(72%) sepia(100%) saturate(333%) hue-rotate(32deg) brightness(102%) contrast(111%);
+                    filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
                 }
             }
         }
@@ -772,6 +808,15 @@ footer {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .who {
+        .who-tech {
+            div {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 1400px) {
     header {
@@ -866,10 +911,13 @@ footer {
                 }
             }
             .speedtyper {
-                background-image: url(../images/speedtyper.png);
+                background-image: url('../images/speedtyper.png');
+            }
+            .portfolio {
+                background-image: url('../images/portfolio.png');
             }
             .checker {
-                background-image: url(../images/checker.png);
+                background-image: url('../images/checker.png');
             }
         }
     }
@@ -886,10 +934,13 @@ footer {
                 }
             }
             .showcase-speedtyper {
-                background-image: url(../images/speedtyper.png);
+                background-image: url('../images/speedtyper.png');
+            }
+            .showcase-portfolio {
+                background-image: url('../images/portfolio.png');
             }
             .showcase-checker {
-                background-image: url(../images/checker.png);
+                background-image: url('../images/checker.png');
             }
         }
     }

@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: greenyellow;
+  color: #0080FF;
 }
 
 ul {
@@ -156,15 +156,16 @@ section > div h1 {
 .who .who-tech div {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
 }
 
-.who .who-tech div img {
+.who .who-tech div p svg {
   width: 40px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  height: 40px;
+  -ms-grid-column-align: left;
+      justify-self: left;
 }
 
 .offer-container ul li {
@@ -172,10 +173,11 @@ section > div h1 {
 }
 
 .offer-container ul li .icon-container {
-  height: 50px;
+  height: 70px;
   display: -ms-grid;
   display: grid;
   place-content: center;
+  margin-bottom: 1em;
 }
 
 .offer-container ul li .offer-title {
@@ -197,6 +199,7 @@ section > div h1 {
   display: -ms-grid;
   display: grid;
   place-content: center;
+  margin-bottom: 1em;
 }
 
 .process .process-container ul li .process-title {
@@ -341,8 +344,17 @@ section > div h1 {
   background-image: url("../images/speedtyper.png");
 }
 
+.feature .portfolio {
+  background-image: url("../images/portfolio.png");
+}
+
 .feature .checker {
   background-image: url("../images/checker.png");
+}
+
+.contact-text a:hover svg {
+  -webkit-filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+          filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
 }
 
 .contact-media {
@@ -367,13 +379,13 @@ section > div h1 {
 }
 
 .contact-media .contact-media-each a:hover {
-  color: black;
+  color: #0080FF;
   font-weight: 700;
 }
 
 .contact-media .contact-media-each a:hover svg {
-  -webkit-filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(261deg) brightness(106%) contrast(102%);
-          filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(261deg) brightness(106%) contrast(102%);
+  -webkit-filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+          filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
 }
 
 footer {
@@ -471,6 +483,10 @@ footer .footer-icon {
 
 .showcase .showcase-container ul .showcase-speedtyper {
   background-image: url("../images/speedtyper.png");
+}
+
+.showcase .showcase-container ul .showcase-portfolio {
+  background-image: url("../images/portfolio.png");
 }
 
 .showcase .showcase-container ul .showcase-checker {
@@ -589,6 +605,11 @@ footer .footer-icon {
   }
   .about .about-inspired {
     font-size: 24px;
+  }
+  .who .who-tech div {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
   }
   .offer-container ul {
     display: -ms-grid;
@@ -725,6 +746,11 @@ footer .footer-icon {
     margin: 0;
     padding: 0 0 0 1em;
   }
+  .who .who-tech div {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+  }
   .offer .offer-container ul {
     grid-gap: 50px;
   }
@@ -803,10 +829,13 @@ footer .footer-icon {
     font-size: 13px;
   }
   .feature .feature-container ul .speedtyper {
-    background-image: url(../images/speedtyper_small.png);
+    background-image: url("../images/speedtyper_small.png");
+  }
+  .feature .feature-container ul .portfolio {
+    background-image: url("../images/portfolio_small.png");
   }
   .feature .feature-container ul .checker {
-    background-image: url(../images/checker_small.png);
+    background-image: url("../images/checker_small.png");
   }
   .showcase .showcase-container ul {
     display: -ms-grid;
@@ -831,10 +860,13 @@ footer .footer-icon {
     font-size: 13px;
   }
   .showcase .showcase-container ul .showcase-speedtyper {
-    background-image: url(../images/speedtyper_small.png);
+    background-image: url("../images/speedtyper_small.png");
+  }
+  .showcase .showcase-container ul .showcase-portfolio {
+    background-image: url("../images/portfolio_small.png");
   }
   .showcase .showcase-container ul .showcase-checker {
-    background-image: url(../images/checker_small.png);
+    background-image: url("../images/checker_small.png");
   }
   .contact {
     display: -webkit-box;
@@ -887,8 +919,8 @@ footer .footer-icon {
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
   footer .footer-icon a:hover svg {
-    -webkit-filter: invert(72%) sepia(100%) saturate(333%) hue-rotate(32deg) brightness(102%) contrast(111%);
-            filter: invert(72%) sepia(100%) saturate(333%) hue-rotate(32deg) brightness(102%) contrast(111%);
+    -webkit-filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+            filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
   }
   .background {
     display: -ms-grid;
@@ -915,6 +947,13 @@ footer .footer-icon {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: edu;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .who .who-tech div {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1007,10 +1046,13 @@ footer .footer-icon {
     font-size: 15px;
   }
   .feature .feature-container ul .speedtyper {
-    background-image: url(../images/speedtyper.png);
+    background-image: url("../images/speedtyper.png");
+  }
+  .feature .feature-container ul .portfolio {
+    background-image: url("../images/portfolio.png");
   }
   .feature .feature-container ul .checker {
-    background-image: url(../images/checker.png);
+    background-image: url("../images/checker.png");
   }
   .showcase .showcase-container ul li {
     height: 350px;
@@ -1023,10 +1065,13 @@ footer .footer-icon {
     font-size: 15px;
   }
   .showcase .showcase-container ul .showcase-speedtyper {
-    background-image: url(../images/speedtyper.png);
+    background-image: url("../images/speedtyper.png");
+  }
+  .showcase .showcase-container ul .showcase-portfolio {
+    background-image: url("../images/portfolio.png");
   }
   .showcase .showcase-container ul .showcase-checker {
-    background-image: url(../images/checker.png);
+    background-image: url("../images/checker.png");
   }
   .detail .detail-heading {
     margin-bottom: 2em;
