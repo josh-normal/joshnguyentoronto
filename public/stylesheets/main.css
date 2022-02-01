@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Roboto', arial;
-  background-color: #2D2F33;
+  background-color: #303030;
   color: white;
 }
 
@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: #0080FF;
+  color: #3399ff;
 }
 
 ul {
@@ -67,10 +67,25 @@ header ul {
   display: flex;
 }
 
-header ul a {
-  display: block;
+header ul li {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+header ul li a {
   padding: 0 0 0 1em;
   font-size: 15px;
+}
+
+header ul li .header-focus {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header ul li a:hover {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 section {
@@ -352,9 +367,17 @@ section > div h1 {
   background-image: url("../images/checker.png");
 }
 
-.contact-text a:hover svg {
-  -webkit-filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
-          filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+.contact-text a {
+  color: #3399ff;
+}
+
+.contact-text a svg {
+  -webkit-filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
+          filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
+}
+
+.contact-text a:hover {
+  text-decoration: underline;
 }
 
 .contact-media {
@@ -373,19 +396,22 @@ section > div h1 {
   width: 50px;
 }
 
+.contact-media .contact-media-each a {
+  color: #3399ff;
+}
+
 .contact-media .contact-media-each svg {
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .contact-media .contact-media-each a:hover {
-  color: #0080FF;
-  font-weight: 700;
+  text-decoration: underline;
 }
 
 .contact-media .contact-media-each a:hover svg {
-  -webkit-filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
-          filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+  -webkit-filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
+          filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
 }
 
 footer {
@@ -580,9 +606,16 @@ footer .footer-icon {
   header .header-icon {
     font-size: 30px;
   }
-  header ul a {
+  header ul li a {
     padding: 0 0 0 2em;
     font-size: 20px;
+  }
+  header ul li .header-focus {
+    font-size: 26px;
+  }
+  header ul li a:hover {
+    font-size: 26px;
+    font-weight: 600;
   }
   section > div {
     padding: 5em 5em;
@@ -690,9 +723,16 @@ footer .footer-icon {
   header .header-icon {
     font-size: 36px;
   }
-  header ul a {
+  header ul li a {
     padding: 0 0 0 3em;
     font-size: 24px;
+  }
+  header ul li .header-focus {
+    font-size: 30px;
+  }
+  header ul li a:hover {
+    font-size: 30px;
+    font-weight: 600;
   }
   .policy, .term {
     padding: 2em 7em;
@@ -919,8 +959,8 @@ footer .footer-icon {
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
   footer .footer-icon a:hover svg {
-    -webkit-filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
-            filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+    -webkit-filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
+            filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
   }
   .background {
     display: -ms-grid;
@@ -929,7 +969,7 @@ footer .footer-icon {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 300px auto;
         grid-template-rows: 300px auto;
-        grid-template-areas: "img img" "main edu";
+        grid-template-areas: "img img" "main edu";
     grid-gap: 10px;
   }
   .background .background-image {
@@ -964,9 +1004,16 @@ footer .footer-icon {
   header .header-icon {
     font-size: 40px;
   }
-  header ul a {
+  header ul li a {
     padding: 0 0 0 4em;
     font-size: 26px;
+  }
+  header ul li .header-focus {
+    font-size: 30px;
+  }
+  header ul li a:hover {
+    font-size: 30px;
+    font-weight: 600;
   }
   .policy, .term {
     padding: 4em 10em;

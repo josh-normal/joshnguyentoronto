@@ -4,7 +4,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Roboto', arial;
-    background-color: #2D2F33;
+    background-color: #303030;
     color: white;
 }
 a {
@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #0080FF;
+    color: #3399ff;
 }
 ul {
     list-style-type: none;
@@ -46,12 +46,24 @@ header {
     }
     ul {
         display: flex;
-        a {
-            display: block;
-            padding: 0 0 0 1em;
-            font-size: 15px;
+        li {
+            display: grid;
+            place-content: center;
+            a {
+                padding: 0 0 0 1em;
+                font-size: 15px;
+            }
+            .header-focus {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a:hover {
+                font-size: 20px;
+                font-weight: 600;
+            }
         }
     }
+    
 }
 section {
     min-height: 100%;
@@ -268,10 +280,14 @@ section > div {
     }
 }
 .contact-text {
-    a:hover {
+    a {
+        color: #3399ff;
         svg {
-            filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+            filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
         }
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 .contact-media {
@@ -283,15 +299,17 @@ section > div {
         a svg, img {
             width: 50px;
         }
+        a {
+            color: #3399ff;
+        }
         svg {
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
         }
         a:hover {
-            color: #0080FF;
-            font-weight: 700;
             svg {
-                filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+                filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
             }
+            text-decoration: underline;
         }
     }
 }
@@ -441,9 +459,20 @@ footer {
         .header-icon {
             font-size: 30px;
         }
-        ul a {
-            padding: 0 0 0 2em;
-            font-size: 20px;
+        ul {
+            li {
+                a {
+                    padding: 0 0 0 2em;
+                    font-size: 20px;
+                }
+                .header-focus {
+                    font-size: 26px;
+                }
+                a:hover {
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+            }
         }
     }
     section > div {
@@ -570,9 +599,20 @@ footer {
         .header-icon {
             font-size: 36px;
         }
-        ul a {
-            padding: 0 0 0 3em;
-            font-size: 24px;
+        ul {
+            li {
+                a {
+                    padding: 0 0 0 3em;
+                    font-size: 24px;
+                }
+                .header-focus {
+                    font-size: 30px;
+                }
+                a:hover {
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
         }
     }
     .policy, .term {
@@ -784,7 +824,7 @@ footer {
             }
             a:hover {
                 svg {
-                    filter: invert(38%) sepia(93%) saturate(3663%) hue-rotate(196deg) brightness(101%) contrast(107%);
+                    filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
                 }
             }
         }
@@ -824,9 +864,20 @@ footer {
         .header-icon {
             font-size: 40px;
         }
-        ul a {
-            padding: 0 0 0 4em;
-            font-size: 26px;
+        ul {
+            li {
+                a {
+                    padding: 0 0 0 4em;
+                    font-size: 26px;
+                }
+                .header-focus {
+                    font-size: 30px;
+                }
+                a:hover {
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
         }
     }
     .policy, .term {
