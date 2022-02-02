@@ -1,19 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   margin: 0;
   font-family: 'Roboto', arial;
-  background-color: #303030;
+  background-color: #181818;
   color: white;
 }
 
 a {
   color: white;
   text-decoration: none;
-}
-
-a:hover {
-  color: #3399ff;
 }
 
 ul {
@@ -44,6 +45,26 @@ img {
 }
 
 header {
+  width: 100%;
+  height: 4em;
+  background-color: #181818;
+  border-bottom: 1px solid #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+header .header {
+  width: 95%;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,54 +74,73 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
 }
 
-header .header-icon {
+header .header .header-icon a {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.4em;
 }
 
-header ul {
+header .header .header-nav {
+  width: 35%;
+  min-width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header ul li {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+header .header .header-nav a {
+  font-size: 1em;
+  padding: 0.35em 1.2em;
 }
 
-header ul li a {
-  padding: 0 0 0 1em;
-  font-size: 15px;
+header .header .header-nav .header-focus {
+  background-color: #383838;
+  border-radius: 5px;
 }
 
-header ul li .header-focus {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-header ul li a:hover {
-  font-size: 20px;
-  font-weight: 600;
+header .header .header-nav a:hover {
+  background-color: #383838;
+  border-radius: 5px;
 }
 
 section {
-  min-height: 100%;
+  margin-top: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-section > div {
-  padding: 2em 2em;
-  text-align: center;
+section .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 95%;
+  max-width: 1200px;
+}
+
+section .section div {
+  -ms-grid-column-align: center;
+      justify-self: center;
   font-size: 1em;
   line-height: 1.8em;
 }
 
-section > div h1 {
-  font-size: 30px;
+section .section div h1 {
+  font-size: 34px;
 }
 
 .about {
@@ -111,12 +151,12 @@ section > div h1 {
   -webkit-box-direction: reverse;
       -ms-flex-flow: column-reverse;
           flex-flow: column-reverse;
-  text-align: center;
-  padding: 2em;
+  padding: 1em;
 }
 
 .about .about-image {
   width: 100%;
+  text-align: center;
 }
 
 .about .about-image img {
@@ -126,26 +166,29 @@ section > div h1 {
 }
 
 .about h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: #dcdbdb;
   margin: 0;
 }
 
 .about h1 {
-  font-size: 30px;
   margin: 0;
 }
 
-.about p {
-  margin-top: 10px;
-  color: #acacac;
+.about div {
+  margin: 20px 0 0 0;
+}
+
+.about div p {
+  color: #cecece;
 }
 
 .about .about-inspired {
+  font-size: 18px;
   margin-top: 10px;
   font-weight: bold;
-  color: #dddddd;
+  color: white;
 }
 
 .who {
@@ -599,45 +642,40 @@ footer .footer-icon {
   color: #acacac;
 }
 
+@media only screen and (min-width: 550px) {
+  header .header {
+    width: 80%;
+  }
+  header .header .header-icon a {
+    font-size: 1.8em;
+  }
+  section .section {
+    width: 80%;
+  }
+  .about {
+    padding: 0;
+  }
+}
+
 @media only screen and (min-width: 750px) {
-  header {
-    padding: 2em;
+  header .header {
+    width: 70%;
   }
-  header .header-icon {
-    font-size: 30px;
+  header .header .header-nav {
+    width: 40%;
   }
-  header ul li a {
-    padding: 0 0 0 2em;
-    font-size: 20px;
-  }
-  header ul li .header-focus {
-    font-size: 26px;
-  }
-  header ul li a:hover {
-    font-size: 26px;
-    font-weight: 600;
-  }
-  section > div {
-    padding: 5em 5em;
+  header .header .header-nav a {
     font-size: 1.2em;
-  }
-  section > div h1 {
-    font-size: 36px;
+    padding: 0.4em 1.2em;
   }
   .policy, .term {
     padding: 2em 4em;
   }
-  .about {
-    padding: 5em;
+  section .section {
+    width: 70%;
   }
   .about .about-image img {
-    width: 250px;
-  }
-  .about h1 {
-    font-size: 36px;
-  }
-  .about .about-inspired {
-    font-size: 24px;
+    width: 200px;
   }
   .who .who-tech div {
     -ms-grid-columns: (1fr)[3];
@@ -717,46 +755,16 @@ footer .footer-icon {
 }
 
 @media only screen and (min-width: 1000px) {
-  header {
-    padding: 2em 4em;
-  }
-  header .header-icon {
-    font-size: 36px;
-  }
-  header ul li a {
-    padding: 0 0 0 3em;
-    font-size: 24px;
-  }
-  header ul li .header-focus {
-    font-size: 30px;
-  }
-  header ul li a:hover {
-    font-size: 30px;
-    font-weight: 600;
-  }
   .policy, .term {
     padding: 2em 7em;
   }
-  section > div {
-    padding: 2em 5em;
-    font-size: 1.4em;
-  }
-  section > div h1 {
-    font-size: 40px;
-  }
   .about {
-    padding: 4em 5em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: left;
-  }
-  .about h1 {
-    font-size: 40px;
-  }
-  .about .about-inspired {
-    font-size: 1.2em;
+    margin: 3em 0;
   }
   .about .about-image {
     display: -ms-grid;
@@ -998,35 +1006,24 @@ footer .footer-icon {
 }
 
 @media only screen and (min-width: 1400px) {
-  header {
-    padding: 2em 5em;
-  }
-  header .header-icon {
-    font-size: 40px;
-  }
-  header ul li a {
-    padding: 0 0 0 4em;
-    font-size: 26px;
-  }
-  header ul li .header-focus {
-    font-size: 30px;
-  }
-  header ul li a:hover {
-    font-size: 30px;
-    font-weight: 600;
-  }
   .policy, .term {
     padding: 4em 10em;
   }
-  section > div {
-    padding: 4em 7em;
+  section .section div {
+    font-size: 1.1em;
   }
   .about {
-    padding: 6em 7em;
+    margin: 3em 0;
+  }
+  .about .about-text h1 {
+    font-size: 50px;
+    margin: 14px 0;
+  }
+  .about .about-text .about-inspired {
+    font-size: 1.2em;
   }
   .about .about-image img {
-    width: 350px;
-    margin: 2em 0 0 4em;
+    width: 250px;
   }
   .who {
     padding: 4em 7em 6em 7em;
@@ -1189,6 +1186,9 @@ footer .footer-icon {
 }
 
 @media only screen and (min-width: 1600px) {
+  .about .about-image img {
+    margin-left: 3em;
+  }
   .offer .offer-container ul {
     grid-gap: 60px;
     -ms-grid-columns: (1fr)[4];
@@ -1213,14 +1213,11 @@ footer .footer-icon {
 }
 
 @media only screen and (min-width: 1800px) {
-  header {
-    padding: 2em 7em;
-  }
-  section > div {
-    padding: 4em 10em;
-  }
   .about {
-    padding: 6em 10em;
+    margin: 5em 0;
+  }
+  .about .about-image img {
+    width: 300px;
   }
   .who {
     padding: 4em 11em 6em 10em;
