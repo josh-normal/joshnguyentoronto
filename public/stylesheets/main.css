@@ -40,10 +40,6 @@ img {
   display: none;
 }
 
-.policy, .term {
-  padding: 2em 2em;
-}
-
 header {
   width: 100%;
   height: 4em;
@@ -90,6 +86,15 @@ header .header .header-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header .header-nav .header-svg svg {
+  width: 30px;
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 header .header .header-nav a {
@@ -141,6 +146,10 @@ section .section div {
 
 section .section div h1 {
   font-size: 34px;
+}
+
+.policy, .term {
+  padding: 1em;
 }
 
 .about {
@@ -507,8 +516,14 @@ footer .footer-icon {
   display: none;
 }
 
+.showcase {
+  padding: 2em;
+  text-align: center;
+}
+
 .showcase h1 {
   margin-top: 0;
+  font-size: 40px;
 }
 
 .showcase .showcase-container ul {
@@ -712,6 +727,11 @@ footer .footer-icon {
   .contact {
     padding: 0;
   }
+  .policy, .term {
+    padding: 3em 0;
+    width: 70%;
+    max-width: 1200px;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -785,9 +805,6 @@ footer .footer-icon {
     font-size: 1.2em;
     padding: 0.4em 1.2em;
   }
-  .policy, .term {
-    padding: 2em 4em;
-  }
   section .section {
     width: 70%;
   }
@@ -850,9 +867,6 @@ footer .footer-icon {
 }
 
 @media only screen and (min-width: 1000px) {
-  .policy, .term {
-    padding: 2em 7em;
-  }
   .about {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1066,9 +1080,6 @@ footer .footer-icon {
 }
 
 @media only screen and (min-width: 1400px) {
-  .policy, .term {
-    padding: 4em 10em;
-  }
   section .section div {
     font-size: 1.1em;
   }
