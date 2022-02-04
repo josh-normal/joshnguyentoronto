@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="View Josh Nguyen in Toronto portfolio and projects.">
     <title>Josh Nguyen</title>
-    <link rel="icon" href="../images/diamond.png">
+    <link rel="icon" href="../images/JOSH.png">
     <link rel="stylesheet" href="../stylesheets/main.css">
-    <script defer src="javascripts/home.js"></script>
+    <script defer src="../javascripts/form.js"></script>
 </head>
 
 
@@ -37,9 +37,7 @@
                         <p>Full Stack Web Developer</p>
                         <p>I'm experienced in building Web Application with MERN, MEAN, MEVN and Python-Django web stack and other libraries and frameworks.</p>
                     </div>
-                    <p class="about-inspired">Scroll down to see my profile</p>
-                    <h3 style="color: red;">Website is under Maintainence</h3>
-                    <p>Updated on Feb 3rd, 2022</p>
+                    <p class="about-action"><svg fill="#3399ff" class="icon-arrow animate-down" width="8" height="20"><polygon class="arrow" points="4,20 0,16 3,16 3,0 5,0 5,16 8,16"/><polygon class="arrow" points="4,-20 0,-24 3,-24 3,-40 5,-40 5,-24 8,-24"/></svg> Scroll down to see more</p>
                 </div>
                 <div class="about-image">
                     <img src="../images/profile_camp.jpg" alt="profile image">
@@ -199,7 +197,8 @@
                         <ul>
                             <li>Become a well rounded programmer</li>
                             <li>Work for a reputable company</li>
-                            <li>Master my front-end skills before mastering back-end skills</li>
+                            <li>Improve my front-end skills</li>
+                            <li>Improve back-end skills</li>
                         </ul>
                     </div>
                 </div>
@@ -270,7 +269,7 @@
 
         <div class="contact">
             <div class="contact-text">
-                <h1>Stay in touch with me</h1>
+                <h1>Contact me at</h1>
                 <p><svg width="32px" viewBox="-4800 -2400 9600 4800"><path fill="#fff" d="m-4800-2400h9600v4800h-9600z"/><g fill="#888"><path d="m-4800-2400h2400v4800h-2400z"/><path d="m2400-2400h2400v4800h-2400z"/><path d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></g></svg>  Toronto, Canada</p>
                 <p><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg> (647) 581 - 6621</p>
                 <p><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>mpphuoc@gmail.com</p>
@@ -290,13 +289,24 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <h1>Contact</h1>
-                <form action="/contact" method="POST">
-                    <input name="name" autocomplete="off" placeholder="Full name" type="text"><br>
-                    <input name="email" autocomplete="off" placeholder="Email address" type="text"><br>
-                    <textarea name="message" autocomplete="off" placeholder="Message" type="text" cols="30" rows="10"></textarea><br>
-                    <button type="submit">submit</button>
+            <div class="contact-form get-in-touch">
+                <h1 class="title">Get in touch</h1>
+                <form class="contact-form row">
+                    <div class="form-field col x-50">
+                        <input autocomplete="off" autocapitalize="off" spellcheck="false" autocorrect="off" name="name" id="name" class="input-text name-input" type="text" required>
+                        <label class="label" for="name">Name</label>
+                    </div>
+                    <div class="form-field col x-50">
+                        <input autocomplete="off" autocapitalize="off" spellcheck="false" autocorrect="off" name="email" id="email" class="input-text email-input" type="email" required>
+                        <label class="label" for="email">E-mail</label>
+                    </div>
+                    <div class="form-field col x-100">
+                        <label class="label mess-label"><span class="input-span">Message</span></label>
+                        <textarea style="height: auto;" autocomplete="off" spellcheck="false" autocorrect="off" name="message" id="message" class="input-text mess-input" type="text" required></textarea>
+                    </div>
+                    <div class="form-field col x-100 align-center">
+                        <input class="submit-btn" type="submit" value="SUBMIT">
+                    </div>
                 </form>
             </div>
         </div>
