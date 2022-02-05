@@ -54,29 +54,41 @@ header {
                 width: 23px;
             }
         }
+        .header-icon a:hover {
+            color: #3399ff;
+        }
         .header-nav {
             width: 35%;
             min-width: 260px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .header-link {
+                background-color: white;
+                border-radius: 5px;
+                font-family: arial;
+                color: black;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 20px;
+                line-height: 24px;
+                padding: 5px 14px;
+            }
+            .header-link:hover {
+                background-color: #3399ff;
+                color: black;
+            }
+            .header-focus {
+                background-color: #3399ff;
+                color: black;
+            }
             .header-svg {
+                width: 40px;
                 svg {
+                    margin-top: 3px;
                     width: 30px;
                     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
                 }
-            }
-            a {
-                font-size: 1em;
-                padding: 0.35em 1.2em;
-            }
-            .header-focus {
-                background-color: #383838;
-                border-radius: 5px;
-            }
-            a:hover {
-                background-color: #383838;
-                border-radius: 5px;
             }
             .header-svg:hover {
                 background-color: #181818;
@@ -168,11 +180,16 @@ section {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1em;
         p {
+            user-select: none;
             svg {
                 width: 40px;
                 height: 40px;
                 justify-self: left;
             }
+        }
+        p:hover {
+            color: #3399ff;
+            font-weight: bold;
         }
     }
 }
@@ -426,13 +443,23 @@ section {
         transform: translateY(-50%);
         h1 {
             padding: 0 10px;
+            margin-bottom: 40px;
         }
     }
     .contact-form {
         width: 100%;
         .form-field {
             position: relative;
-            margin: 25px 0;
+            margin: 20px 0;
+            background-color: transparent;
+            .mess2 {
+                display: none;
+                height: 1px;
+                width: 1px;
+                font-size: 1px;
+                line-height: 0;
+                user-select: none;
+            }
         }
         .input-text {
             background-color: transparent;
@@ -444,6 +471,7 @@ section {
             border-color: #ffffff;
             font-size: 18px;
             line-height: 26px;
+            letter-spacing: 0.5px;
             font-weight: 400;
             &:focus {
                 outline: none;
@@ -451,27 +479,34 @@ section {
             &:focus, &.not-empty {
                 + .label {
                     transform: translateY(-24px);
+                    color: #3399ff;
                 }
-                
+                background-color: transparent;
+                border-color: #3399ff;
             }
         }
-        .not-empty { .input-span { display: none; } }
         textarea {
             max-width: 100%;
+            color: white;
+            font-family: 'Roboto', arial;
             resize: none;
             outline: none;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0.5px;
+            font-weight: bold;
         }
         .label {
             position: absolute;
-            left: 20px;
+            left: 10px;
             bottom: 11px;
-            font-family: Lusitana, serif;
             font-size: 18px;
             line-height: 26px;
-            font-weight: 400;
+            font-weight: 600;
             color: rgb(209, 209, 209);
             cursor: text;
             transition: transform .2s ease-in-out;
+            user-select: none;
         }
         
         .submit-btn {
@@ -486,6 +521,7 @@ section {
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-transform: uppercase;
         }
         .submit-btn:hover {
             background-color: #3399ff;
@@ -507,9 +543,15 @@ footer {
         p {
             display: none;
         }
+        a:hover {
+            color: #3399ff;
+        }
     }
     .footer-term {
         margin: 10px;
+        a:hover {
+            color: #3399ff;
+        }
     }
     .footer-icon {
         display: none;

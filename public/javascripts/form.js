@@ -1,8 +1,9 @@
 const nameInput = document.querySelector('.name-input');
 const emailInput = document.querySelector('.email-input');
+const subjectInput = document.querySelector('.subject-input');
 const messInput = document.querySelector('.mess-input');
 const textarea = document.querySelector('textarea');
-
+const mess = document.querySelector('.mess')
 
 nameInput.addEventListener("keyup", () => {
     if(nameInput.value) {
@@ -18,9 +19,17 @@ emailInput.addEventListener("keyup", () => {
         emailInput.classList.remove('not-empty');
     }
 });
+subjectInput.addEventListener("keyup", () => {
+    if(subjectInput.value) {
+        subjectInput.classList.add('not-empty');
+    } else {
+        subjectInput.classList.remove('not-empty');
+    }
+});
 messInput.addEventListener("keyup", () => {
     if(messInput.value) {
         messInput.classList.add('not-empty');
+        mess.style.top = "0"
     } else {
         messInput.classList.remove('not-empty');
     }

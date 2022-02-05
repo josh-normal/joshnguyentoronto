@@ -5,7 +5,6 @@ const homeCtrl = require('../controllers/home')
 
 
 router.get('/', homeCtrl.home);
-router.get('/about', homeCtrl.about);
 router.get('/privacy', homeCtrl.privacy);
 router.get('/term', homeCtrl.term);
 router.get('/project', homeCtrl.project);
@@ -15,7 +14,7 @@ router.get('/project/checker', homeCtrl.checker);
 router.get('/project/speedtyper', homeCtrl.speedtyper);
 router.get('/project/portfolio', homeCtrl.portfolio);
 
-
+router.post('/contact', homeCtrl.sendEmail)
 
 
 
