@@ -9,6 +9,7 @@ module.exports = {
     checker,
     speedtyper,
     portfolio,
+    smore,
     sendEmail,
 }
 
@@ -38,6 +39,10 @@ function speedtyper(req, res) {
 
 function portfolio(req, res) {
     res.render('projects/portfolio')
+}
+
+function smore(req, res) {
+    res.render('projects/smore')
 }
 
 function sendEmail(req, res) {
