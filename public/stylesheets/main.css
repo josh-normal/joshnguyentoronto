@@ -1340,7 +1340,7 @@ footer .footer-icon {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 300px auto;
         grid-template-rows: 300px auto;
-        grid-template-areas: "img img" "main edu";
+        grid-template-areas: "img img" "main edu";
     grid-gap: 10px;
   }
   .background .background-image {
