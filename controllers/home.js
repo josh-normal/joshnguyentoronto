@@ -14,7 +14,9 @@ module.exports = {
 }
 
 function home(req, res) {
-    res.render('home')
+    setTimeout(() => {
+        res.render('home')
+    }, 500)
 }
 
 function privacy(req, res) {
@@ -26,7 +28,9 @@ function term(req, res) {
 }
 
 function project(req, res) {
-    res.render('projects/project')
+    setTimeout(() => {
+        res.render('projects/project')
+    }, 500)
 }
 
 function checker(req, res) {
