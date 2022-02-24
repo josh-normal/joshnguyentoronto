@@ -162,6 +162,7 @@
 
         svg {
             width: 100%;
+            transition: filter 300ms ease-in-out;
         }
         .black-color {
             filter: none;
@@ -258,14 +259,18 @@
             font-size: 1.4em;
         }
         header .header .header-icon a img {
-            
+            width: 23px;
         }
         header .header .header-icon a:hover {
             color: #3399ff;
+            -webkit-transition: color 200ms ease;
+            transition: color 200ms ease;
         }
         header .header .header-nav {
-            width: 35%;
-            min-width: 260px;
+            width: 50%;
+            -webkit-transition: width 500ms ease;
+            transition: width 500ms ease;
+            min-width: 205px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -289,6 +294,8 @@
         }
         header .header .header-nav .header-link:hover {
             background-color: #3399ff;
+            -webkit-transition: background 300ms ease;
+            transition: background 300ms ease;
         }
         header .header .header-nav .header-focus {
             background-color: #3399ff;
@@ -356,16 +363,18 @@
             width: 31px;
         }
         header .header .header-nav .header-svg svg {
+            transition: none;
             margin-top: 3px;
             width: 30px;
             -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
         }
         header .header .header-nav .header-svg:hover {
-            background-color: #181818;
+            background-color: #222222;
             border: none;
         }
         header .header .header-nav .header-svg:hover svg {
+            transition: none;
             -webkit-filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
             filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
         }
@@ -376,14 +385,9 @@
             header .header .header-icon a {
                 font-size: 1.8em;
             }
-        }
-        @media screen and (max-width: 700px) {
-            section {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-            .image {
-                margin-top: 2em;
+            header .header .header-nav {
+                -webkit-transition: width 500ms ease;
+                transition: width 500ms ease;
             }
         }
         @media only screen and (min-width: 750px) {
@@ -391,7 +395,9 @@
                 width: 70%;
             }
             header .header .header-nav {
-                width: 40%;
+                width: 60%;
+                -webkit-transition: none;
+                transition: none;
             }
             header .header .header-nav a {
                 font-size: 1.2em;
@@ -399,6 +405,18 @@
             }
             header .header .header-nav .header-svg {
                 display: unset;
+            }
+        }
+        @media only screen and (min-width: 850px) {
+            header .header .header-nav {
+                width: 360px;
+                -webkit-transition: width 500ms ease;
+                transition: width 500ms ease;
+            }
+        }
+        @media only screen and (min-width: 1000px) {
+            header .header .header-nav {
+                width: 400px;
             }
         }
     </style>

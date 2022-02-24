@@ -58,6 +58,12 @@ img {
   display: none;
 }
 
+.helmet img {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+}
+
 header {
   width: 100%;
   height: 4em;
@@ -102,11 +108,15 @@ header .header .header-icon a img {
 
 header .header .header-icon a:hover {
   color: #3399ff;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
 }
 
 header .header .header-nav {
-  width: 35%;
-  min-width: 260px;
+  width: 50%;
+  -webkit-transition: width 500ms ease;
+  transition: width 500ms ease;
+  min-width: 205px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,6 +142,8 @@ header .header .header-nav .header-link {
 
 header .header .header-nav .header-link:hover {
   background-color: #3399ff;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
 }
 
 header .header .header-nav .header-focus {
@@ -783,7 +795,7 @@ section .section div h1 {
 
 .contact .contact-text .contact-media {
   height: 25px;
-  width: 170px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,6 +824,12 @@ section .section div h1 {
 .contact .contact-text .contact-media .contact-media-each a:hover svg {
   -webkit-filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
           filter: invert(67%) sepia(55%) saturate(6139%) hue-rotate(192deg) brightness(102%) contrast(105%);
+}
+
+.contact .contact-text .contact-media .contact-media-each a img {
+  width: 25px;
+  height: 25px;
+  margin: 0;
 }
 
 .contact .row {
@@ -950,6 +968,8 @@ section .section div h1 {
 
 .contact .contact-form .submit-btn:hover {
   background-color: #3399ff;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
   color: black;
 }
 
@@ -1264,6 +1284,10 @@ footer .footer-icon {
   header .header .header-icon a {
     font-size: 1.8em;
   }
+  header .header .header-nav {
+    -webkit-transition: width 500ms ease;
+    transition: width 500ms ease;
+  }
   section .section {
     width: 80%;
   }
@@ -1414,7 +1438,9 @@ footer .footer-icon {
     width: 70%;
   }
   header .header .header-nav {
-    width: 40%;
+    width: 60%;
+    -webkit-transition: none;
+    transition: none;
   }
   header .header .header-nav a {
     font-size: 1.2em;
@@ -1489,7 +1515,18 @@ footer .footer-icon {
   }
 }
 
+@media only screen and (min-width: 850px) {
+  header .header .header-nav {
+    width: 360px;
+    -webkit-transition: width 500ms ease;
+    transition: width 500ms ease;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
+  header .header .header-nav {
+    width: 400px;
+  }
   .about {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
