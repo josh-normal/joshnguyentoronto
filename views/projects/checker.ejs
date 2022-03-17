@@ -1,56 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Josh Nguyen">
-    <meta name="keywords" content="Web Developer, Full Stack Developer, Font End Developer, Back End Developer, Software Engineer, HTML, CSS, Javascript, React, Nodejs, Express, Python, Django">
-    <meta name="description" content="Full-Stack Web Developer - Josh Nguyen's personal portfolio website where you can find Josh's information, background, skills, resume, Josh's projects, and more. This website was built from scratch using HTML, CSS, SASS, Javascript, jQuery, Node.js, Express, Google Cloud, etc.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Josh Nguyen - Full-Stack Web developer">
-    <meta property="og:description" content="View Josh's personal portfolio website where you can find Josh's information, background, skills, resume, Josh's projects, and more.">
-    <meta property="og:image" content="https://joshnguyentoronto.com/images/profile_camp_3.png">
-    <meta property="og:url" content="https://joshnguyentoronto.com/">
-    <meta property="og:locale" content="en_CA">
-    <meta property="og:site_name" content="joshnguyentoronto.com">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="479">
-    <meta property="og:image:type" content="image/png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@Josh_Nguyen_TO">
-    <meta name="twitter:title" content="Josh Nguyen - Full-Stack Web developer">
-    <meta name="twitter:description" content="View Josh's personal portfolio website where you can find Josh's information, background, skills, resume, Josh's projects, and more.">
-    <meta name="twitter:image" content="https://joshnguyentoronto.com/images/profile_camp_3.png">
-    <meta name="twitter:url" content="https://joshnguyentoronto.com/">
-    <title>Josh Nguyen - Checker game</title>
-    <link rel="canonical" href="https://joshnguyentoronto.com/">
-    <link rel="icon" href="../images/JOSH.png">
-    <link rel="stylesheet" href="../../stylesheets/main.css">
-    <script defer src="../../javascripts/form.js"></script>
-    <script defer>
-        function changeBlue(e) {
-            e.src = "../images/helmet_blue.png";
-        }
-        function changeWhite(e) {
-            e.src = "../images/helmet_white.png";
-        }
-    </script>
-</head>
-<body>
-    <header>
-        <div class="header">
-            <div class="header-icon">
-                <a href="/" class="header-icon">Josh Nguyen</a>
-            </div>
-            <div class="header-nav">
-                <a class="header-link" href="/">HOME</a>
-                <a class="header-link header-focus header-project" href="/project">Project</a>
-                <a class="header-svg" target="_blank" href="https://www.linkedin.com/in/joshnguyentoronto/"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                <a class="header-svg" target="_blank" href="https://github.com/joshnguyentoronto"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
-            </div>
-        </div>
-    </header>
+<%- include('../partials/header') %>
 
     <section>
         <div class="section">
@@ -62,92 +10,20 @@
                     <a target="_blank" href="https://github.com/joshnguyentoronto/Josh-Checkers">GitHub</a>
                 </div>
                 <div class="detail-body">
-                    <div class="detail-info">
-                        <h1>Description:</h1>
-                        <p>The checkers board game is one of the world’s oldest games. It is played by two persons who oppose each other across a board of 64 light and dark squares, the same as a chessboard. At the start of the game, each contestant has 12 pieces arranged on the board.</p>
-                        <div class="detail-tech">
-                            <h1>Technologies used:</h1>
-                            <div>
-                                <p><svg viewBox="0 0 512 512"><path fill="#ffffff" d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/><path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"/><path fill="#f16529" d="M256 480.5V131H404.3L376 447"/><path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"/><path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/></svg>HTML5</p>
-                                <p><svg viewBox="-52.5 0 361 361" preserveAspectRatio="xMidYMid"><path d="M127.844 360.088L23.662 331.166.445 70.766h255.11l-23.241 260.36-104.47 28.962z" fill="#264DE4"/><path d="M212.417 314.547l19.86-222.49H128V337.95l84.417-23.403z" fill="#2965F1"/><path d="M53.669 188.636l2.862 31.937H128v-31.937H53.669zM47.917 123.995l2.903 31.937H128v-31.937H47.917zM128 271.58l-.14.037-35.568-9.604-2.274-25.471h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58z" fill="#EBEBEB"/><path fill="#ffffff" d="M60.484 0h38.68v16.176H76.66v16.176h22.506v16.175H60.484V0zM106.901 0h38.681v14.066h-22.505v2.813h22.505v32.352h-38.68V34.46h22.505v-2.813H106.9V0zM153.319 0H192v14.066h-22.505v2.813H192v32.352h-38.681V34.46h22.505v-2.813H153.32V0z"/><path d="M202.127 188.636l5.765-64.641H127.89v31.937h45.002l-2.906 32.704H127.89v31.937h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576z" fill="#FFF"/></svg>CSS3</p>
-                                <p><svg aria-label="JavaScript" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f7df1e"/><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/></svg>Javascript</p>
-                                <p><svg viewBox="0 0 32 32"><path d="M29.01,5.03,23.244,2.254a1.742,1.742,0,0,0-1.989.338L2.38,19.8A1.166,1.166,0,0,0,2.3,21.447c.025.027.05.053.077.077l1.541,1.4a1.165,1.165,0,0,0,1.489.066L28.142,5.75A1.158,1.158,0,0,1,30,6.672V6.605A1.748,1.748,0,0,0,29.01,5.03Z" style="fill:#0065a9"/><path d="M29.01,26.97l-5.766,2.777a1.745,1.745,0,0,1-1.989-.338L2.38,12.2A1.166,1.166,0,0,1,2.3,10.553c.025-.027.05-.053.077-.077l1.541-1.4A1.165,1.165,0,0,1,5.41,9.01L28.142,26.25A1.158,1.158,0,0,0,30,25.328V25.4A1.749,1.749,0,0,1,29.01,26.97Z" style="fill:#007acc"/><path d="M23.244,29.747a1.745,1.745,0,0,1-1.989-.338A1.025,1.025,0,0,0,23,28.684V3.316a1.024,1.024,0,0,0-1.749-.724,1.744,1.744,0,0,1,1.989-.339l5.765,2.772A1.748,1.748,0,0,1,30,6.6V25.4a1.748,1.748,0,0,1-.991,1.576Z" style="fill:#1f9cf0"/></svg>VS Code</p>
-                                <p><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid"><g><path d="M251.172245,116.593517 L139.398753,4.82845302 C132.966433,-1.60948434 122.525852,-1.60948434 116.085106,4.82845302 L92.8753863,28.0381721 L122.317995,57.4807809 C129.16041,55.1690784 137.005593,56.7195763 142.460425,62.1744081 C147.940536,67.6629464 149.479799,75.5755422 147.111919,82.4404282 L175.487156,110.815665 C182.352042,108.450594 190.273064,109.98143 195.755985,115.472777 C203.418591,123.132574 203.418591,135.547794 195.755985,143.213209 C188.09057,150.878624 175.67535,150.878624 168.007126,143.213209 C162.243319,137.443783 160.81922,128.977839 163.737639,121.877008 L137.275245,95.4146135 L137.272436,165.052198 C139.140337,165.979126 140.904309,167.212221 142.460425,168.762719 C150.123031,176.422516 150.123031,188.837736 142.460425,196.508768 C134.79501,204.171375 122.374173,204.171375 114.719993,196.508768 C107.057387,188.837736 107.057387,176.422516 114.719993,168.762719 C116.613174,166.872347 118.804095,165.442631 121.141077,164.481996 L121.141077,94.1955625 C118.804095,93.2405457 116.615983,91.8192558 114.719993,89.9148396 C108.914052,84.1173254 107.518042,75.5980132 110.492639,68.4690928 L81.4713611,39.4421974 L4.83125614,116.076685 C-1.60949009,122.52024 -1.60949009,132.960821 4.83125614,139.398759 L116.604747,251.166631 C123.039876,257.604569 133.477648,257.604569 139.921203,251.166631 L251.172245,139.9184 C257.61018,133.477654 257.61018,123.031455 251.172245,116.593517" fill="#DE4C36"></path></g></svg>Git</p>
-                                <p><svg viewBox="0 0 64 64" id="i-github"><path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" /></svg>GitHub</p>
-                                <p><svg viewBox="0 0 16 16" fill="currentColor" ><path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146z"/></svg>Terminal</p>
-                            </div>
+                    <h1>Description:</h1>
+                    <p>The checkers board game is one of the world’s oldest games. It is played by two persons who oppose each other across a board of 64 light and dark squares, the same as a chessboard. At the start of the game, each contestant has 12 pieces arranged on the board.</p>
+                    <div class="detail-tech">
+                        <h1>Technologies used:</h1>
+                        <div>
+                            <p><svg viewBox="0 0 512 512"><path fill="#ffffff" d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/><path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"/><path fill="#f16529" d="M256 480.5V131H404.3L376 447"/><path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"/><path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/></svg>HTML5</p>
+                            <p><svg viewBox="-52.5 0 361 361" preserveAspectRatio="xMidYMid"><path d="M127.844 360.088L23.662 331.166.445 70.766h255.11l-23.241 260.36-104.47 28.962z" fill="#264DE4"/><path d="M212.417 314.547l19.86-222.49H128V337.95l84.417-23.403z" fill="#2965F1"/><path d="M53.669 188.636l2.862 31.937H128v-31.937H53.669zM47.917 123.995l2.903 31.937H128v-31.937H47.917zM128 271.58l-.14.037-35.568-9.604-2.274-25.471h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58z" fill="#EBEBEB"/><path fill="#ffffff" d="M60.484 0h38.68v16.176H76.66v16.176h22.506v16.175H60.484V0zM106.901 0h38.681v14.066h-22.505v2.813h22.505v32.352h-38.68V34.46h22.505v-2.813H106.9V0zM153.319 0H192v14.066h-22.505v2.813H192v32.352h-38.681V34.46h22.505v-2.813H153.32V0z"/><path d="M202.127 188.636l5.765-64.641H127.89v31.937h45.002l-2.906 32.704H127.89v31.937h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576z" fill="#FFF"/></svg>CSS3</p>
+                            <p><svg aria-label="JavaScript" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f7df1e"/><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/></svg>Javascript</p>
+                            <p><svg viewBox="0 0 32 32"><path d="M29.01,5.03,23.244,2.254a1.742,1.742,0,0,0-1.989.338L2.38,19.8A1.166,1.166,0,0,0,2.3,21.447c.025.027.05.053.077.077l1.541,1.4a1.165,1.165,0,0,0,1.489.066L28.142,5.75A1.158,1.158,0,0,1,30,6.672V6.605A1.748,1.748,0,0,0,29.01,5.03Z" style="fill:#0065a9"/><path d="M29.01,26.97l-5.766,2.777a1.745,1.745,0,0,1-1.989-.338L2.38,12.2A1.166,1.166,0,0,1,2.3,10.553c.025-.027.05-.053.077-.077l1.541-1.4A1.165,1.165,0,0,1,5.41,9.01L28.142,26.25A1.158,1.158,0,0,0,30,25.328V25.4A1.749,1.749,0,0,1,29.01,26.97Z" style="fill:#007acc"/><path d="M23.244,29.747a1.745,1.745,0,0,1-1.989-.338A1.025,1.025,0,0,0,23,28.684V3.316a1.024,1.024,0,0,0-1.749-.724,1.744,1.744,0,0,1,1.989-.339l5.765,2.772A1.748,1.748,0,0,1,30,6.6V25.4a1.748,1.748,0,0,1-.991,1.576Z" style="fill:#1f9cf0"/></svg>VS Code</p>
+                            <p><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid"><g><path d="M251.172245,116.593517 L139.398753,4.82845302 C132.966433,-1.60948434 122.525852,-1.60948434 116.085106,4.82845302 L92.8753863,28.0381721 L122.317995,57.4807809 C129.16041,55.1690784 137.005593,56.7195763 142.460425,62.1744081 C147.940536,67.6629464 149.479799,75.5755422 147.111919,82.4404282 L175.487156,110.815665 C182.352042,108.450594 190.273064,109.98143 195.755985,115.472777 C203.418591,123.132574 203.418591,135.547794 195.755985,143.213209 C188.09057,150.878624 175.67535,150.878624 168.007126,143.213209 C162.243319,137.443783 160.81922,128.977839 163.737639,121.877008 L137.275245,95.4146135 L137.272436,165.052198 C139.140337,165.979126 140.904309,167.212221 142.460425,168.762719 C150.123031,176.422516 150.123031,188.837736 142.460425,196.508768 C134.79501,204.171375 122.374173,204.171375 114.719993,196.508768 C107.057387,188.837736 107.057387,176.422516 114.719993,168.762719 C116.613174,166.872347 118.804095,165.442631 121.141077,164.481996 L121.141077,94.1955625 C118.804095,93.2405457 116.615983,91.8192558 114.719993,89.9148396 C108.914052,84.1173254 107.518042,75.5980132 110.492639,68.4690928 L81.4713611,39.4421974 L4.83125614,116.076685 C-1.60949009,122.52024 -1.60949009,132.960821 4.83125614,139.398759 L116.604747,251.166631 C123.039876,257.604569 133.477648,257.604569 139.921203,251.166631 L251.172245,139.9184 C257.61018,133.477654 257.61018,123.031455 251.172245,116.593517" fill="#DE4C36"></path></g></svg>Git</p>
+                            <p><svg viewBox="0 0 64 64" id="i-github"><path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" /></svg>GitHub</p>
+                            <p><svg viewBox="0 0 16 16" fill="currentColor" ><path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146z"/></svg>Terminal</p>
                         </div>
-                        <h1>Instruction:</h1>
-                        <ol class="checker-instruction">
-                            <li>
-                                <h1>Take Control of the Center</h1>
-                                <p>Beginners often place their checkers on the edge of the board. This seems like a reasonable strategy, because your pieces on the edge cannot be captured. But as it turns out, pushing your checkers to the edges is a mistake. Try to form a pyramid shape with your pieces.</p>
-                            </li>
-                            <li>
-                                <h1>Play offensive</h1>
-                                <p>Because of the possibility of forced moves, your opponent can presents you with a capture you must take. Because of this, you cannot afford to sit back and fortify. You could be forced to jump your checkers into oblivion at any time and no defense that you build can stand up over time.</p>
-                            </li>
-                            <li>
-                                <h1>Play according to the strength of your position</h1>
-                                <p>Attack only on the strong side and defend only with on the weak side.</p>
-                            </li>
-                            <li>
-                                <h1>Never move a piece without a notive</h1>
-                                <p>If you wish to become a master player, you need to learn how to "plan" and not merely live from one move to the next.</p>
-                            </li>
-                            <li>
-                                <h1>Stick together when you advance</h1>
-                                <p>A single checker advanced can easily be jumped and captured while a checker backed up by two more checkers is immune from capture. If you press forward with a few checkers then your advancing force will be much more powerful.</p>
-                            </li>
-                            <li>
-                                <h1>Crown your pieces to kings</h1>
-                                <p>A kinged piece is incredibly powerful. The player who kings more checkers will usually win. While capturing opposing checkers is generally a good thing, your biggest concern should always be kinging your own checkers.</p>
-                            </li>
-                            <li>
-                                <h1>Sacrifice a checker if needed</h1>
-                                <p>You should be willing to trade a capture for a capture when it advantages you. Sacrificing a checker to clear a path to be kinged is always worth it.</p>
-                            </li>
-                            <li>
-                                <h1>Trade pieces when you are ahead</h1>
-                                <p>With only 12 pieces on the board for each player, it is quite possible that you may quickly end up with a 8-7 piece advantage and if you can trade four pieces, you suddenly have a 4-3 advantage which is a tremendous amount of power.</p>
-                            </li>
-                            <li>
-                                <h1>Move your home row checkers only when you need them</h1>
-                                <p>Your opponent cannot get any kinged checkers without advancing into one of your four home spaces. Keeping these spaces occupied guarantees that your opponent will get no kings until your checkers move. 10. Attack you opponents "Double Corner"</p>
-                            </li>
-                            <li>
-                                <h1>Be aware for kings in the endgame</h1>
-                                <p>Once only a few pieces are left on the board, the path to kingship will be open. Don't trade pieces blindly if it means that your opponent will be closer than you to get a king.</p>
-                            </li>
-                            <li>
-                                <h1>Win by blocking</h1>
-                                <p>If you cannot move a piece on your turn, you lose. If you can block in your opponent's checkers, you will win.</p>
-                            </li>
-                            <li>
-                                <h1>Play against better players</h1>
-                                <p>While winning is fun, you can't learn much by playing against weaker players.</p>
-                            </li>
-                        </ol>
-                        <h1>Challenges:</h1>
-                        <ul>
-                            <li>Design a table layout that make it easy to set up the game.</li>
-                            <li>Store game state data within the file.</li>
-                            <li>Adhere to all the checker game rule.</li>
-                            <li>Manipulate the DOM as well as get information from it when user play the game.</li>
-                            <li>Testing and fixing bugs that occured.</li>
-                        </ul>
-                        <h1>Solution:</h1>
-                        <ul>
-                            <li>Create the table layout with different class attribute on it</li>
-                            <li>Store the game state in many nested array</li>
-                            <li>Use classes to easily access the DOM and display the game.</li>
-                        </ul>
-                        <h1>Ice Box, Next Step:</h1>
-                        <ul>
-                            <li>Enable Dragable feature</li>
-                        </ul>
                     </div>
-                    <div class="detail-separate"></div>
                     <div class="detail-image">
                         <h1>Reviews:</h1>
                         <div class="detail-image-each">
@@ -163,135 +39,80 @@
                             <img src="../../images/checker_review_wireframe.png" alt="wireframe image">
                         </div>
                     </div>
+                    <h1>Instruction:</h1>
+                    <ol class="checker-instruction">
+                        <li>
+                            <h1>Take Control of the Center</h1>
+                            <p>Beginners often place their checkers on the edge of the board. This seems like a reasonable strategy, because your pieces on the edge cannot be captured. But as it turns out, pushing your checkers to the edges is a mistake. Try to form a pyramid shape with your pieces.</p>
+                        </li>
+                        <li>
+                            <h1>Play offensive</h1>
+                            <p>Because of the possibility of forced moves, your opponent can presents you with a capture you must take. Because of this, you cannot afford to sit back and fortify. You could be forced to jump your checkers into oblivion at any time and no defense that you build can stand up over time.</p>
+                        </li>
+                        <li>
+                            <h1>Play according to the strength of your position</h1>
+                            <p>Attack only on the strong side and defend only with on the weak side.</p>
+                        </li>
+                        <li>
+                            <h1>Never move a piece without a notive</h1>
+                            <p>If you wish to become a master player, you need to learn how to "plan" and not merely live from one move to the next.</p>
+                        </li>
+                        <li>
+                            <h1>Stick together when you advance</h1>
+                            <p>A single checker advanced can easily be jumped and captured while a checker backed up by two more checkers is immune from capture. If you press forward with a few checkers then your advancing force will be much more powerful.</p>
+                        </li>
+                        <li>
+                            <h1>Crown your pieces to kings</h1>
+                            <p>A kinged piece is incredibly powerful. The player who kings more checkers will usually win. While capturing opposing checkers is generally a good thing, your biggest concern should always be kinging your own checkers.</p>
+                        </li>
+                        <li>
+                            <h1>Sacrifice a checker if needed</h1>
+                            <p>You should be willing to trade a capture for a capture when it advantages you. Sacrificing a checker to clear a path to be kinged is always worth it.</p>
+                        </li>
+                        <li>
+                            <h1>Trade pieces when you are ahead</h1>
+                            <p>With only 12 pieces on the board for each player, it is quite possible that you may quickly end up with a 8-7 piece advantage and if you can trade four pieces, you suddenly have a 4-3 advantage which is a tremendous amount of power.</p>
+                        </li>
+                        <li>
+                            <h1>Move your home row checkers only when you need them</h1>
+                            <p>Your opponent cannot get any kinged checkers without advancing into one of your four home spaces. Keeping these spaces occupied guarantees that your opponent will get no kings until your checkers move. 10. Attack you opponents "Double Corner"</p>
+                        </li>
+                        <li>
+                            <h1>Be aware for kings in the endgame</h1>
+                            <p>Once only a few pieces are left on the board, the path to kingship will be open. Don't trade pieces blindly if it means that your opponent will be closer than you to get a king.</p>
+                        </li>
+                        <li>
+                            <h1>Win by blocking</h1>
+                            <p>If you cannot move a piece on your turn, you lose. If you can block in your opponent's checkers, you will win.</p>
+                        </li>
+                        <li>
+                            <h1>Play against better players</h1>
+                            <p>While winning is fun, you can't learn much by playing against weaker players.</p>
+                        </li>
+                    </ol>
+                    <h1>Challenges:</h1>
+                    <ul>
+                        <li>Design a table layout that make it easy to set up the game.</li>
+                        <li>Store game state data within the file.</li>
+                        <li>Adhere to all the checker game rule.</li>
+                        <li>Manipulate the DOM as well as get information from it when user play the game.</li>
+                        <li>Testing and fixing bugs that occured.</li>
+                    </ul>
+                    <h1>Solution:</h1>
+                    <ul>
+                        <li>Create the table layout with different class attribute on it</li>
+                        <li>Store the game state in many nested array</li>
+                        <li>Use classes to easily access the DOM and display the game.</li>
+                    </ul>
+                    <h1>Ice Box, Next Step:</h1>
+                    <ul>
+                        <li>Enable Dragable feature</li>
+                        <li>Intergrate more music</li>
+                    </ul>
+                    <h1>License:</h1>
+                    <p>Distributed under the MIT License.</p>
                 </div>
             </div>
     
     
-            <div class="feature-box">
-                <div class="feature">
-                    <h1><span>Feature Projects</span></h1>
-                    <div class="feature-container">
-                        <ul>
-                            <li class="smore">
-                                <a href="/project/smore">
-                                    <div class="feature-outer">
-                                        <div class="feature-inner">
-                                            <p class="feature-title">Smore Recipes</p>
-                                            <p class="feature-desc">A one-stop-shop camping trip planing app for people love camping that want to plan ahead</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="speedtyper">
-                                <a href="/project/speedtyper">
-                                    <div class="feature-outer">
-                                        <div class="feature-inner">
-                                            <p class="feature-title">SpeedTyper</p>
-                                            <p class="feature-desc">A touch typing practicing website where user can practice your typing.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="portfolio">
-                                <a href="/project/portfolio">
-                                    <div class="feature-outer">
-                                        <div class="feature-inner">
-                                            <p class="feature-title">This website</p>
-                                            <p class="feature-desc">This portfolio website was build using Nodejs, Express, JavaScript, HTML, CSS, etc.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="checker">
-                                <a href="/project/checker">
-                                    <div class="feature-outer">
-                                        <div class="feature-inner">
-                                            <p class="feature-title">Checker game</p>
-                                            <p class="feature-desc">A simple and fun one-page web <br>game of checkers for 2 players.<br>No AI was implemented.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="contact">
-                <div class="contact-text">
-                    <h1>Contact me at</h1>
-                    <p><svg width="32px" viewBox="-4800 -2400 9600 4800"><path fill="#fff" d="m-4800-2400h9600v4800h-9600z"/><g fill="#888"><path d="m-4800-2400h2400v4800h-2400z"/><path d="m2400-2400h2400v4800h-2400z"/><path d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></g></svg>  Toronto, Canada</p>
-                    <p><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg> (647) 581 - 6621</p>
-                    <p><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>mpphuoc@gmail.com</p>
-                    <a style="line-height: 45px;" target="_blank" href="../images/JoshNguyenToronto-Resume.pdf"><svg height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg> JoshNguyenToronto-Resume.pdf &nbsp;&#10095;</a>
-                    <div class="contact-media">
-                        <div class="contact-media-each">
-                            <a target="_blank" href="https://www.linkedin.com/in/joshnguyentoronto/"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                        </div>
-                        <div class="contact-media-each">
-                            <a target="_blank" href="https://github.com/joshnguyentoronto"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
-                        </div>
-                        <div class="contact-media-each">
-                            <a target="_blank" href="https://www.facebook.com/josh.phuoc.nguyen"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
-                        </div>
-                        <div class="contact-media-each">
-                            <a target="_blank" href="https://twitter.com/Josh_Nguyen_TO"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg></a>
-                        </div>
-                        <div class="contact-media-each">
-                            <a class="helmet" href="/404"><img onmouseover="changeBlue(this)" onmouseout="changeWhite(this)" id="helmet-1" src="../images/helmet_white.png" alt="icon helmet"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form get-in-touch">
-                    <h1 class="title">Get in touch</h1>
-                    <form class="contact-form row" autocomplete="off" action="/contact" method="POST">
-                        <div class="form-field col x-50">
-                            <input onkeypress="return checkEntry(event)" autocomplete="off" autocapitalize="off" spellcheck="false" autocorrect="off" name="name" id="name" class="input-text name-input" type="text" required>
-                            <label class="label" for="name">Name</label>
-                        </div>
-                        <div class="form-field col x-50">
-                            <input autocomplete="off" autocapitalize="off" spellcheck="false" autocorrect="off" name="email" id="email" class="input-text email-input" type="email" required>
-                            <label class="label" for="email">E-mail</label>
-                        </div>
-                        <div class="form-field col x-100">
-                            <input  onkeypress="return checkEntry(event)" autocomplete="off" autocapitalize="off" spellcheck="false" autocorrect="off" name="subject" id="subject" class="input-text subject-input" type="text" required>
-                            <label class="label" for="subject">Subject</label>
-                        </div>
-                        <div class="form-field col x-100">
-                            <textarea style="height: auto;" autocomplete="off" spellcheck="false" autocorrect="off" name="message" id="message" class="input-text mess-input" type="text" required></textarea>
-                            <label class="label mess">Message</label>
-                        </div>
-                        <div class="form-field col x-100 align-center">
-                            <input class="submit-btn" type="submit" value="Submit">
-                        </div>
-                        <script>
-                            function checkEntry(e) {
-                                let k;
-                                document.all ? k = e.keyCode : k = e.which;
-                                return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 32 || (k >= 48 && k <= 57));
-                            }
-                        </script>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="footer-link">
-                <a href="/">JOSH NGUYEN</a><br>
-            </div>
-            <div class="footer-term">
-                <a href="/privacy">Privacy Policy</a>
-                <span>&nbsp;|&nbsp;</span>
-                <a href="/term">Terms of Service</a>
-            </div>
-            <div class="footer-icon">
-                <a target="_blank" href="https://www.linkedin.com/in/joshnguyentoronto/"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                <a target="_blank" href="https://github.com/joshnguyentoronto"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
-                <a target="_blank" href="https://www.facebook.com/josh.phuoc.nguyen"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
-                <a target="_blank" href="https://twitter.com/Josh_Nguyen_TO"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg></a>
-                <a target="_self" href="/404"><img onmouseover="changeBlue(this)" onmouseout="changeWhite(this)" style="width: 40px; height: 40px; margin: 0;" src="../images/helmet_white.png" alt="icon helmet"></a>
-            </div>
-        </footer>
-</body>
-</html>
+<%- include('../partials/footer') %>
