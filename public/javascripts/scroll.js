@@ -27,5 +27,5 @@ function scrollContact(target, duration) {
 
 let contactBtn = document.getElementById('contact-btn')
 contactBtn.addEventListener('click', function() {
-    scrollContact('.contact', 2000)
+    scrollContact('.contact', 1700)
 })
