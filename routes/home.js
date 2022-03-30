@@ -13,6 +13,8 @@ router.get('/project/speedtyper', homeCtrl.speedtyper);
 router.get('/project/portfolio', homeCtrl.portfolio);
 router.get('/project/smore-recipes', homeCtrl.smore);
 router.get('/project/the-exhibit', homeCtrl.exhibit);
+router.get('/project/wander-wallet', homeCtrl.wander);
+router.get('/project/zoom-clone', homeCtrl.zoom);
 
 
 module.exports = router;

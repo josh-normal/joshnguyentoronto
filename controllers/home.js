@@ -11,6 +11,8 @@ module.exports = {
     portfolio,
     smore,
     exhibit,
+    wander,
+    zoom,
 }
 
 function home(req, res) {
@@ -51,4 +53,12 @@ function smore(req, res) {
 
 function exhibit(req, res) {
     res.render('projects/exhibit')
+}
+
+function wander(req, res) {
+    res.render('projects/wanderWallet')
+}
+
+function zoom(req, res) {
+    res.render('projects/zoomClone')
 }

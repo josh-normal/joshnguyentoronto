@@ -714,6 +714,10 @@ section .section div h1 {
   background: url("../images/exhibit.png") no-repeat center center;
 }
 
+.feature .feature-container ul .wander-wallet {
+  background: url("../images/wander_wallet.png") no-repeat center center;
+}
+
 .contact {
   padding: 1em;
   margin: 0 0 2em 0;
@@ -1050,6 +1054,10 @@ footer .footer-icon {
   line-height: 15px;
 }
 
+.showcase .showcase-container ul .showcase-none {
+  background: url("../images/showcase-none.png") no-repeat center center;
+}
+
 .showcase .showcase-container ul .showcase-exhibit {
   background: url("../images/exhibit.png") no-repeat center center;
 }
@@ -1070,6 +1078,10 @@ footer .footer-icon {
   background: url("../images/checker.png") no-repeat center center;
 }
 
+.showcase .showcase-container ul .showcase-wander-wallet {
+  background: url("../images/wander_wallet.png") no-repeat center center;
+}
+
 .detail {
   padding: 1em;
   display: -webkit-box;
@@ -1083,7 +1095,29 @@ footer .footer-icon {
 
 .detail .detail-heading {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2em;
+}
+
+.detail .detail-heading .detail-heading-img {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+
+.detail .detail-heading .detail-heading-img img {
+  width: 350px;
+  margin: -50px 0 20px 0;
 }
 
 .detail .detail-heading h1 {

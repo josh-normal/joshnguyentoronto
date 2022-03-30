@@ -466,6 +466,9 @@ section {
             .exhibit {
                 background: url('../images/exhibit.png') no-repeat center center;
             }
+            .wander-wallet {
+                background: url('../images/wander_wallet.png') no-repeat center center;
+            }
         }
     }
 }
@@ -730,6 +733,9 @@ footer {
                 }
             }
         }
+        .showcase-none {
+            background: url('../images/showcase-none.png') no-repeat center center;
+        }
         .showcase-exhibit {
             background: url('../images/exhibit.png') no-repeat center center;
         }
@@ -745,6 +751,9 @@ footer {
         .showcase-checker {
             background: url('../images/checker.png') no-repeat center center;
         }
+        .showcase-wander-wallet {
+            background: url('../images/wander_wallet.png') no-repeat center center;
+        }
     }
 }
 .detail {
@@ -753,6 +762,18 @@ footer {
     flex-direction: column;
     .detail-heading {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .detail-heading-img {
+            display: grid;
+            place-content: center;
+            width: 100%;
+            img {
+                width: 350px;
+                margin: -50px 0 20px 0;
+            }
+        }
         h1 {
             font-size: 30px;
             margin-top: 0;
